@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Slider Preview and pagination options</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="asset/image/slide-01.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-02.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-03.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-04.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-05.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-06.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-07.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-08.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-09.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-10.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-11.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-12.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-13.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-14.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-15.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-16.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-17.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-18.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-19.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="asset/image/slide-20.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    autoplay: {
+      delay: 2000,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+
+
+    pagination: {
+      el: '.swiper-pagination',
+      // type: "bullets",
+      // type: "progressbar",
+      type: "fraction",
+      // clickable: true,
+      //   renderBullet: function (index, className) {
+      //     return '<span class="' + className + '">' + (index + 1) + "</span>"
+      //   },
+    },
+  });
+</script>
+</html>
